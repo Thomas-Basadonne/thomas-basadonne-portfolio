@@ -176,6 +176,7 @@ section {
 }
 
 .image {
+  display: flex;
   border-radius: var(--br-sm-2);
   height: 90%;
   width: 68%;
@@ -603,6 +604,7 @@ p {
 .btn-con {
   display: flex;
   align-self: flex-start;
+  margin: 0 auto;
 }
 
 .main-btn {
@@ -691,8 +693,6 @@ p {
   }
   .left-header .h-shape .image {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .right-header {
     flex: 1;
@@ -710,7 +710,6 @@ p {
   .right-header .btn-con .main-btn {
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
   }
   .header-content .left-header .image {
     margin: 0 auto;
@@ -809,10 +808,42 @@ p {
     display: flex;
     flex-direction: column;
   }
+  .right-header {
+    margin: 0 auto !important;
+  }
+  .h-text {
+    margin: 1.3rem 0 !important;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 1rem;
+  }
 }
 @media screen and (max-width: 700px) {
   .container {
     padding: 7rem 3rem;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 1.1rem;
   }
   .about-stats .progress-bars {
     display: flex;
@@ -847,23 +878,60 @@ p {
     display: flex;
     flex-direction: column;
     padding-bottom: 6rem;
+    padding-top: 1.5rem;
   }
   .left-header .h-shape {
     display: none;
   }
   .left-header .image {
-    width: 90% !important;
-    margin: 0 auto !important;
+    width: 40%;
+    margin: 0 auto;
   }
   .right-header {
     flex: 1; /* Per far espandere la colonna a destra */
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto !important;
+    margin-right: 0;
     text-align: center;
     padding-top: 3rem;
   }
+  .right-header .h-text {
+    margin: 1.2rem 0;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 1.3rem;
+  }
 }
 @media screen and (max-width: 1070px) {
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 1rem 1.3rem;
+  }
+  .name > span {
+    white-space: nowrap;
+  }
+  .h-text {
+    margin-right: 2rem;
+  }
   .about-container {
     display: flex;
     flex-direction: column;
@@ -887,8 +955,15 @@ p {
     flex-direction: row;
     margin-top: 6rem;
   }
+  .h-text {
+    margin-right: 2rem;
+  }
   .header-content .right-header {
     padding-right: 0rem;
+    margin-right: 3.8rem;
+  }
+  .container {
+    padding: 7rem 11rem;
   }
 }
 @media screen and (max-width: 1432px) {

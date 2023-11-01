@@ -21,6 +21,9 @@
 
   .left-header .h-shape {
     display: none;
+    .image {
+      display: flex;
+    }
   }
 
   .right-header {
@@ -35,11 +38,9 @@
 
     .btn-con {
       margin-top: 2.2rem;
-
       .main-btn {
         display: flex;
         align-items: center;
-        padding: 0.5rem 1rem;
       }
     }
   }
@@ -166,6 +167,27 @@
     flex-direction: column;
   }
 
+  .right-header {
+    margin: 0 auto !important;
+  }
+
+  .h-text {
+    margin: 1.3rem 0 !important;
+  }
+
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    .control {
+      margin: 1rem 1rem;
+    }
+  }
   // .portfolios {
   //   display: flex;
   //   flex-direction: column;
@@ -177,6 +199,19 @@
     padding: 7rem 3rem;
   }
 
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    .control {
+      margin: 1rem 1.1rem;
+    }
+  }
   .about-stats .progress-bars {
     display: flex;
     flex-direction: column;
@@ -218,6 +253,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 6rem;
+    padding-top: 1.5rem;
   }
 
   .left-header .h-shape {
@@ -225,20 +261,59 @@
   }
 
   .left-header .image {
-    width: 90% !important;
-    margin: 0 auto !important;
+    width: 40%;
+    margin: 0 auto;
   }
 
   .right-header {
     flex: 1; /* Per far espandere la colonna a destra */
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto !important;
+    margin-right: 0;
     text-align: center;
     padding-top: 3rem;
+
+    .h-text {
+      margin: 1.2rem 0;
+    }
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    .control {
+      margin: 1rem 1.3rem;
+    }
   }
 }
 
 @media screen and (max-width: 1070px) {
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    .control {
+      margin: 1rem 1.3rem;
+    }
+  }
+
+  .name > span {
+    white-space: nowrap;
+  }
+
+  .h-text {
+    margin-right: 2rem;
+  }
   .about-container {
     display: flex;
     flex-direction: column;
@@ -267,6 +342,10 @@
     margin-top: 6rem;
   }
 
+  .h-text {
+    margin-right: 2rem;
+  }
+
   // .portfolios {
   //   display: flex;
   //   flex-direction: row;
@@ -274,6 +353,10 @@
 
   .header-content .right-header {
     padding-right: 0rem;
+    margin-right: 3.8rem;
+  }
+  .container {
+    padding: 7rem 11rem;
   }
 }
 

@@ -175,6 +175,7 @@ section {
 }
 
 .image {
+  display: flex;
   border-radius: var(--br-sm-2);
   height: 90%;
   width: 68%;
@@ -725,6 +726,7 @@ p {
 .btn-con {
   display: flex;
   align-self: flex-start;
+  margin: 0 auto;
 }
 .main-btn {
   border-radius: 50px;
