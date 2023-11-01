@@ -727,7 +727,7 @@ p {
   align-self: flex-start;
 }
 .main-btn {
-  border-radius: 30px;
+  border-radius: 50px;
   color: inherit;
   font-weight: 600;
   position: relative;
@@ -741,10 +741,7 @@ p {
   }
   .btn-icon {
     background-color: var(--color-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+    border-radius: 55%;
     padding: 1rem;
   }
   &::before {

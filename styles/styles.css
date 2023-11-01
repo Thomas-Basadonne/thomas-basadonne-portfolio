@@ -76,17 +76,8 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: appear 1s ease-in-out;
-          animation: appear 1s ease-in-out;
+  animation: appear 1s ease-in-out;
   transform: translateY(0) scaleY(1);
-}
-@-webkit-keyframes appear {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
 }
 @keyframes appear {
   0% {
@@ -615,7 +606,7 @@ p {
 }
 
 .main-btn {
-  border-radius: 30px;
+  border-radius: 50px;
   color: inherit;
   font-weight: 600;
   position: relative;
@@ -630,10 +621,7 @@ p {
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  border-radius: 55%;
   padding: 1rem;
 }
 .main-btn::before {
@@ -700,6 +688,11 @@ p {
   }
   .left-header .h-shape {
     display: none;
+  }
+  .left-header .h-shape .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .right-header {
     flex: 1;
