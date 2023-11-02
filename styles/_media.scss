@@ -132,22 +132,6 @@
     margin-bottom: 6rem;
   }
 
-  .contact-item {
-    flex-direction: column;
-    margin: 1rem 0;
-    p {
-      font-size: 15px;
-      color: var(--color-grey-2);
-    }
-    span {
-      font-size: 15px;
-    }
-    .icon {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-
   .main-title {
     h2 {
       font-size: 2rem;
@@ -161,7 +145,7 @@
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 670px) {
   .blogs {
     display: flex;
     flex-direction: column;
@@ -187,6 +171,26 @@
     .control {
       margin: 1rem 1rem;
     }
+  }
+
+  .name > span {
+    white-space: wrap !important;
+  }
+
+  .contact-item {
+    flex-direction: row;
+    margin: 1rem 2;
+    p {
+      font-size: 15px;
+      color: var(--color-grey-2);
+    }
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .submit-btn {
+    justify-content: center !important;
   }
   // .portfolios {
   //   display: flex;
@@ -290,6 +294,11 @@
       margin: 1rem 1.3rem;
     }
   }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1070px) {
@@ -355,16 +364,9 @@
     padding-right: 0rem;
     margin-right: 3.8rem;
   }
-  .container {
-    padding: 7rem 11rem;
-  }
 }
 
 @media screen and (max-width: 1432px) {
-  .container {
-    padding: 7rem 11rem;
-  }
-
   .contact-content-con {
     display: flex;
     flex-direction: column;

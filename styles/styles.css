@@ -114,7 +114,7 @@ section {
 }
 .controls .control i {
   font-size: 1.2rem;
-  color: var(--color-grey-2);
+  color: var(--color-primary);
   pointer-events: none;
 }
 .controls .active-btn {
@@ -779,21 +779,6 @@ p {
   .contact-content-con .right-contact {
     margin-bottom: 6rem;
   }
-  .contact-item {
-    flex-direction: column;
-    margin: 1rem 0;
-  }
-  .contact-item p {
-    font-size: 15px;
-    color: var(--color-grey-2);
-  }
-  .contact-item span {
-    font-size: 15px;
-  }
-  .contact-item .icon {
-    display: flex;
-    flex-direction: row;
-  }
   .main-title h2 {
     font-size: 2rem;
   }
@@ -804,7 +789,7 @@ p {
     font-size: 2.3rem;
   }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 670px) {
   .blogs {
     display: flex;
     flex-direction: column;
@@ -827,6 +812,23 @@ p {
   }
   .controls .control {
     margin: 1rem 1rem;
+  }
+  .name > span {
+    white-space: wrap !important;
+  }
+  .contact-item {
+    flex-direction: row;
+    margin: 1rem 2;
+  }
+  .contact-item p {
+    font-size: 15px;
+    color: var(--color-grey-2);
+  }
+  .contact-item span {
+    font-size: 15px;
+  }
+  .submit-btn {
+    justify-content: center !important;
   }
 }
 @media screen and (max-width: 700px) {
@@ -912,6 +914,10 @@ p {
   .controls .control {
     margin: 1rem 1.3rem;
   }
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 1070px) {
   .controls {
@@ -963,14 +969,8 @@ p {
     padding-right: 0rem;
     margin-right: 3.8rem;
   }
-  .container {
-    padding: 7rem 11rem;
-  }
 }
 @media screen and (max-width: 1432px) {
-  .container {
-    padding: 7rem 11rem;
-  }
   .contact-content-con {
     display: flex;
     flex-direction: column;
