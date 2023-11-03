@@ -395,6 +395,7 @@ p {
 }
 .timeline-item .tl-icon i {
   font-size: 1.3rem;
+  color: var(--color-i);
 }
 .timeline-item .tl-duration {
   margin-top: 4px;
@@ -486,7 +487,7 @@ p {
   align-items: center;
 }
 .blog .blog-text .icons .icon {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -499,14 +500,14 @@ p {
 }
 .blog .blog-text .icons .icon i {
   font-size: 1.5rem;
-  color: var(--color-white);
+  color: var(--color-i);
   margin: 0 1rem;
 }
 .blog .blog-text .icons .icon:hover {
   background-color: var(--color-white);
 }
 .blog .blog-text .icons .icon:hover i {
-  color: var(--color-primary);
+  color: var(--color-i);
 }
 
 .contact-content-con {
@@ -541,6 +542,7 @@ p {
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
   font-size: 1.3rem;
+  color: var(--color-i);
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
@@ -628,6 +630,7 @@ p {
   background-color: var(--color-secondary);
   border-radius: 55%;
   padding: 1rem;
+  color: var(--color-i);
 }
 .main-btn::before {
   content: "";
