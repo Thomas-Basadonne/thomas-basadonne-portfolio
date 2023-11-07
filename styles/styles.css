@@ -66,7 +66,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 3rem 16rem;
 }
 
 .container {
@@ -840,13 +840,13 @@ p {
     margin-bottom: 6rem;
   }
   .main-title h2 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .main-title h2 span {
-    font-size: 2.3rem;
+    font-size: 2rem !important;
   }
   .main-title h2 .bg-text {
-    font-size: 2.3rem;
+    font-size: 2.9rem !important;
   }
 }
 @media screen and (max-width: 670px) {
@@ -873,9 +873,6 @@ p {
   .controls .control {
     margin: 1rem 1rem;
   }
-  .name > span {
-    white-space: wrap !important;
-  }
   .contact-item {
     flex-direction: row;
     margin: 1rem 2;
@@ -890,10 +887,25 @@ p {
   .submit-btn {
     justify-content: center !important;
   }
+  .main-title {
+    margin-top: 1.2rem;
+  }
+  .main-title h2 {
+    font-size: 2.4rem !important;
+  }
+  .main-title h2 span {
+    font-size: 2.4rem !important;
+  }
+  .main-title h2 .bg-text {
+    font-size: 3rem !important;
+  }
+  .blog-text {
+    padding: 2rem 0 0 0;
+  }
 }
 @media screen and (max-width: 700px) {
-  .container {
-    padding: 7rem 3rem;
+  .name > span {
+    white-space: wrap !important;
   }
   .controls {
     top: auto;
@@ -921,10 +933,10 @@ p {
     flex-direction: column;
   }
   .main-title h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .main-title h2 span {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
@@ -932,10 +944,13 @@ p {
 }
 @media screen and (max-width: 970px) {
   .container {
-    padding: 7rem 6rem;
+    padding: 4rem 7rem !important;
   }
   .about-container .left-about {
     padding-right: 0rem;
+  }
+  .about-container .left-about h4 {
+    text-align: center;
   }
   .header-content {
     display: flex;
@@ -947,7 +962,7 @@ p {
     display: none;
   }
   .left-header .image {
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
   }
   .right-header {
@@ -980,6 +995,12 @@ p {
   }
 }
 @media screen and (max-width: 1070px) {
+  section {
+    padding: 3rem 18rem;
+  }
+  .container {
+    padding: 7rem 10rem;
+  }
   .controls {
     top: auto;
     bottom: 0;
@@ -1053,6 +1074,6 @@ p {
     margin-bottom: 6rem;
   }
   .main-title h2 .bg-text {
-    font-size: 5.5rem;
+    font-size: 6.4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
