@@ -905,7 +905,7 @@ p {
 }
 @media screen and (max-width: 700px) {
   .name > span {
-    white-space: wrap !important;
+    white-space: normal !important;
   }
   .controls {
     top: auto;
