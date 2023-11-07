@@ -665,7 +665,7 @@ p {
 
           i {
             font-size: 1.3rem;
-            color: var(--color-i);
+            color: var(--color-secondary);
           }
         }
       }
@@ -771,6 +771,7 @@ p {
   }
   &:hover {
     transition: all 0.4s ease-out;
+    color: var(--color-i);
     &::before {
       width: 100%;
       height: 100%;

@@ -689,25 +689,36 @@
               </div>
             </div>
             <div class="right-contact">
-              <form action="" class="contact-form" netlify>
+              <form name="contact" class="contact-form" netlify>
                 <div class="input-control i-c-2">
-                  <input type="text" required placeholder="Il tuo nome" />
-                  <input type="email" required placeholder="La tua E-mail" />
+                  <input
+                    type="text"
+                    name="nome"
+                    required
+                    placeholder="Il tuo nome"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="La tua E-mail"
+                  />
                 </div>
                 <div class="input-control">
-                  <input type="text" required placeholder="Oggetto" />
+                  <input type="text" name="oggetto" placeholder="Oggetto" />
                 </div>
                 <div class="input-control">
                   <textarea
-                    name=""
+                    name="contenuto"
                     id=""
                     cols="15"
                     rows="8"
                     placeholder="Scrivi qui..."
+                    required
                   ></textarea>
                 </div>
                 <div class="submit-btn">
-                  <a href="#" class="main-btn">
+                  <a type="submit" class="main-btn">
                     <span class="btn-text">Invia</span>
                     <span class="btn-icon"
                       ><i class="fa-solid fa-envelope-circle-check"></i

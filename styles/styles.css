@@ -551,7 +551,7 @@ p {
 }
 .contact-content-con .left-contact .contact-info .contact-item .icon i {
   font-size: 1.3rem;
-  color: var(--color-i);
+  color: var(--color-secondary);
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
@@ -652,6 +652,7 @@ p {
 }
 .main-btn:hover {
   transition: all 0.4s ease-out;
+  color: var(--color-i);
 }
 .main-btn:hover::before {
   width: 100%;
