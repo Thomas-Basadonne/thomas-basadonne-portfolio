@@ -487,7 +487,6 @@ p {
 .blog .blog-text p {
   color: var(--color-grey-2);
   line-height: 2rem;
-  padding-bottom: 1rem;
 }
 .blog .icons {
   display: flex;
