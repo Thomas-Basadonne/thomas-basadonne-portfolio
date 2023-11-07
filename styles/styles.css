@@ -437,6 +437,8 @@ p {
 .blog {
   flex: 1; /* Per far espandere gli elementi su tre colonne */
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-grey-5);
   border-radius: 5px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
@@ -469,7 +471,9 @@ p {
 .blog .blog-text {
   margin-top: -7px;
   padding: 1.1rem;
-  border-top: 8px solid var(--color-secondary);
+  border-top: 16px solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
 }
 .blog .blog-text h4 {
   font-size: 1.5rem;
@@ -485,12 +489,14 @@ p {
   line-height: 2rem;
   padding-bottom: 1rem;
 }
-.blog .blog-text .icons {
+.blog .icons {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
+  padding-bottom: 1rem;
 }
-.blog .blog-text .icons .icon {
+.blog .icons .icon {
   background-color: var(--color-secondary);
   border-radius: 50%;
   width: 50px;
@@ -502,15 +508,15 @@ p {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.blog .blog-text .icons .icon i {
+.blog .icons .icon i {
   font-size: 1.5rem;
   color: var(--color-i);
   margin: 0 1rem;
 }
-.blog .blog-text .icons .icon:hover {
+.blog .icons .icon:hover {
   background-color: var(--color-white);
 }
-.blog .blog-text .icons .icon:hover i {
+.blog .icons .icon:hover i {
   color: var(--color-black);
 }
 
@@ -963,6 +969,9 @@ p {
   }
   .main-title h2 .bg-text {
     font-size: 4.5rem;
+  }
+  .blogs {
+    margin-bottom: 3rem;
   }
 }
 @media screen and (max-width: 1250px) {
