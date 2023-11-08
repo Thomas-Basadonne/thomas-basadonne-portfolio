@@ -455,7 +455,7 @@ p {
 }
 .blogs {
   display: flex;
-  flex-wrap: wrap; /* Per far scendere gli elementi quando lo spazio è insufficiente */
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 3rem;
 }
