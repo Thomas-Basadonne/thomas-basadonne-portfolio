@@ -342,22 +342,22 @@ p {
 
           /* Impostazioni di larghezza per le diverse classi */
           .html {
-            width: 80%;
+            width: 90%;
           }
           .css {
-            width: 95%;
+            width: 80%;
           }
           .js {
+            width: 70%;
+          }
+          .vue {
             width: 75%;
           }
-          .react {
-            width: 60%;
+          .bootstrap {
+            width: 90%;
           }
-          .node {
-            width: 87%;
-          }
-          .python {
-            width: 70%;
+          .scss {
+            width: 65%;
           }
         }
       }
