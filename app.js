@@ -59,6 +59,8 @@
 // Funzione autoeseguibile per evitare inquinamento dello scope globale
 (function () {
   // Seleziona tutti gli elementi con la classe "control" e itera su di essi
+  // Il codice all'interno di questa funzione verrà eseguito per ogni elemento trovato con la classe "control"
+  // lo spread(operatore di propagazione crea un array contenente tutti gli elemanti con classe controll)
   [...document.querySelectorAll(".control")].forEach((button) => {
     // Aggiungi un listener per l'evento di click a ciascun elemento "control"
     button.addEventListener("click", function () {
